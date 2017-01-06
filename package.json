@@ -2,18 +2,18 @@
   "name": "react-homework",
   "version": "1.0.0",
   "scripts": {
-    "build-js": "$(npm bin)/browserify js/main.js -o js/result.js -t babelify",
-    "watch-js": "$(npm bin)/watchify js/main.js -o js/result.js -t babelify"
+    "build-js": "browserify js/main.jsx -t babelify -o js/result.js",
+    "watch-js": "watchify js/main.jsx -t babelify -o js/result.js"
   },
   "dependencies": {
     "babel-plugin-transform-react-jsx": "^6.8.0",
     "babel-preset-latest": "^6.16.0",
     "babelify": "^7.3.0",
-    "browserify": "^13.1.1",
+    "browserify": "^13.3.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "todomvc-app-css": "^2.0.6",
     "todomvc-common": "^1.0.3",
-    "watchify": "^3.7.0"
+    "watchify": "^3.8.0"
   }
 }
